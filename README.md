@@ -31,26 +31,6 @@ Edit Mode.
 The operator is also in **Edge > Set Edge Length...** and the right-click menu, where it
 opens a dialog prefilled with the current length.
 
-## Development
-
-```powershell
-./dev/link.ps1 -BlenderVersion 5.2      # junction this folder into Blender's extensions
-./dev/link.ps1 -BlenderVersion 5.2 -Remove
-```
-
-Headless tests:
-
-```powershell
-& "C:\Program Files\Blender Foundation\Blender 5.2\blender.exe" --background --factory-startup --python dev/smoke_test.py
-```
-
-Build a release zip:
-
-```powershell
-New-Item -ItemType Directory -Force build | Out-Null
-& "C:\Program Files\Blender Foundation\Blender 5.2\blender.exe" --command extension build --output-dir build
-```
-
 ## License
 
 GPL-3.0-or-later. See [LICENSE](LICENSE).
