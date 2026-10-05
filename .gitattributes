@@ -1,0 +1,12 @@
+# Normalize to LF in the repository. Blender extensions ship to Linux and macOS as
+# well as Windows, so line endings should not depend on who cloned it.
+* text=auto eol=lf
+
+# PowerShell is Windows-facing; keep CRLF in the working tree there.
+*.ps1 text eol=crlf
+
+# Never touch these.
+*.blend binary
+*.whl   binary
+*.pyd   binary
+*.png   binary

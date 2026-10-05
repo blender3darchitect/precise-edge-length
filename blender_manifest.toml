@@ -1,0 +1,32 @@
+schema_version = "1.0.0"
+
+id = "precise_edge_length"
+version = "0.1.1"
+name = "Precise Edge Length"
+tagline = "Type a precise edge length, in world space and scene units"
+maintainer = "Allan Brito <allan@blender3darchitect.com>"
+type = "add-on"
+
+website = "https://www.blender3darchitect.com"
+
+tags = ["Mesh", "Modeling"]
+
+blender_version_min = "4.2.0"
+
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+copyright = [
+  "2026 Allan Brito",
+]
+
+[build]
+paths_exclude_pattern = [
+  "__pycache__/",
+  "/.git/",
+  "/.gitignore",
+  "/build/",
+  "/dev/",
+  "/setEdgeLenght_markdown.md",
+  "/CLAUDE.md",
+]
